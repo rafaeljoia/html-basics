@@ -1,0 +1,85 @@
+[debug] [2017-07-14T15:11:12.281Z] ----------------------------------------------------------------------
+[debug] [2017-07-14T15:11:12.287Z] Command:      C:\Program Files\nodejs\node.exe C:\Users\rafael.liberato\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy --debug
+[debug] [2017-07-14T15:11:12.290Z] CLI Version:  3.9.1
+[debug] [2017-07-14T15:11:12.295Z] Platform:     win32
+[debug] [2017-07-14T15:11:12.296Z] Node Version: v8.0.0
+[debug] [2017-07-14T15:11:12.300Z] Time:         Fri Jul 14 2017 12:11:12 GMT-0300 (Hora oficial do Brasil)
+[debug] [2017-07-14T15:11:12.301Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-07-14T15:11:12.327Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-07-14T15:11:12.335Z] > authorizing via signed-in user
+[debug] [2017-07-14T15:11:12.341Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-07-14T15:11:12.344Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/UkeHkWylaEVJlUieF8dx3ny7yWrRKVdslV52jK7-xPFv9ewcd8EXhemqBWc4JNBB',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Fri Jul 14 2017 12:11:12 GMT-0300 (Hora oficial do Brasil)
+[debug] [2017-07-14T15:11:13.200Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-14T15:11:13.269Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/dm104project  
+ Fri Jul 14 2017 12:11:13 GMT-0300 (Hora oficial do Brasil)
+[debug] [2017-07-14T15:11:14.573Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-14T15:11:14.577Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/dm104project/tokens  
+ Fri Jul 14 2017 12:11:14 GMT-0300 (Hora oficial do Brasil)
+[debug] [2017-07-14T15:11:15.268Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'dm104project'...
+[info] 
+[info] i  deploying database, functions, hosting
+[info] +  database: rules ready to deploy.
+[debug] [2017-07-14T15:11:17.463Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "dependencies": {
+    "firebase-admin": "~4.2.1",
+    "firebase-functions": "^0.5.7"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[info] i  runtimeconfig: ensuring necessary APIs are enabled...
+[debug] [2017-07-14T15:11:17.482Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/dm104project?view=CONSUMER_VIEW  
+ Fri Jul 14 2017 12:11:17 GMT-0300 (Hora oficial do Brasil)
+[debug] [2017-07-14T15:11:17.489Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/dm104project?view=CONSUMER_VIEW  
+ Fri Jul 14 2017 12:11:17 GMT-0300 (Hora oficial do Brasil)
+[debug] [2017-07-14T15:11:18.904Z] <<< HTTP RESPONSE 200
+[info] +  runtimeconfig: all necessary APIs are enabled
+[debug] [2017-07-14T15:11:19.209Z] <<< HTTP RESPONSE 200
+[info] +  functions: all necessary APIs are enabled
+[debug] [2017-07-14T15:11:19.229Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/dm104project  
+ Fri Jul 14 2017 12:11:19 GMT-0300 (Hora oficial do Brasil)
+[debug] [2017-07-14T15:11:19.235Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/dm104project/apiKeys  
+ Fri Jul 14 2017 12:11:19 GMT-0300 (Hora oficial do Brasil)
+[debug] [2017-07-14T15:11:20.249Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-14T15:11:20.484Z] <<< HTTP RESPONSE 200
+[info] i  functions: preparing functions directory for uploading...
+[debug] [2017-07-14T15:11:30.068Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/dm104project/configs  
+ Fri Jul 14 2017 12:11:30 GMT-0300 (Hora oficial do Brasil)
+[debug] [2017-07-14T15:11:30.874Z] <<< HTTP RESPONSE 200
+[info] i  hosting: preparing public directory for upload...
+[debug] [2017-07-14T15:11:36.852Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/dm104project/uploads/-Kp0draa5oIhFvqum_VH?fileCount=3040&message=  
+ Fri Jul 14 2017 12:11:36 GMT-0300 (Hora oficial do Brasil)
+[info] +  hosting: 3040 files uploaded successfully
+[info] i  starting release process (may take several minutes)...
+[debug] [2017-07-14T15:21:04.363Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1beta2/projects/dm104project/locations/us-central1/functions  
+ Fri Jul 14 2017 12:21:04 GMT-0300 (Hora oficial do Brasil)
+[debug] [2017-07-14T15:21:04.375Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-14T15:21:04.386Z] [hosting] .tgz uploaded successfully, waiting for extraction
+[debug] [2017-07-14T15:21:05.435Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-14T15:21:05.449Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1beta2/projects/dm104project/locations/us-central1/functions  
+ Fri Jul 14 2017 12:21:05 GMT-0300 (Hora oficial do Brasil)
+[debug] [2017-07-14T15:21:06.215Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-14T15:21:06.231Z] >>> HTTP REQUEST POST https://deploy.firebase.com/v1/projects/dm104project/releases { database: { rulesString: '{\n  "rules": {\n    ".read": "true",\n    ".write": "true"\n  }\n}' },
+  hosting: 
+   { public: 'public',
+     rewrites: [ [Object] ],
+     version: '-Kp0draa5oIhFvqum_VH',
+     prefix: '-Kp0draa5oIhFvqum_VH/',
+     manifest: [] } } 
+ Fri Jul 14 2017 12:21:06 GMT-0300 (Hora oficial do Brasil)
+[debug] [2017-07-14T15:21:07.332Z] <<< HTTP RESPONSE 200
+[info] 
+[info] +  Deploy complete!
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/dm104project/overview
+[info] Hosting URL: https://dm104project.firebaseapp.com
